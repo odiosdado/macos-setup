@@ -1,0 +1,27 @@
+brew_cask_packages:
+  - docker
+  - postman
+  - signal
+  - visual-studio-code
+  - 1password
+brew_packages:
+  - ansible
+  - azure-cli
+  - awscli
+  - git
+  - gnupg
+  - go
+  - helm
+  - jq
+  - kubernetes-cli
+  - mitmproxy
+  - n
+  - openjdk
+  - openssl@3
+  - postgresql@12
+  - pyenv
+  - python@3.10
+  - romkatv/powerlevel10k/powerlevel10k
+  - stern
+  - tfenv
+  - watch

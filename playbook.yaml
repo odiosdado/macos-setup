@@ -1,0 +1,24 @@
+---
+- name: Configure MacOS
+  hosts: localhost
+  become: false
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+    - name: Updating Homebrew
+      homebrew:
+        update_homebrew: yes
+        upgrade_all: yes
+        
+    - name: Installing Homebrew Cask Packages
+      homebrew_cask:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ brew_cask_packages }}"
+
+    - name: Install Homebrew Packages
+      homebrew:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ brew_packages }}"
