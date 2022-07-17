@@ -5,6 +5,8 @@ This repo contains configuration to get a macos workstation, up and ready for . 
 - brew
 - oh_my_zsh with antigen
 
+Managed files are backed up to `/path/to/file.<iso date>` on each run of ansible.
+
 ## Pre-reqs
 ```bash'
 - brew https://brew.sh/
