@@ -6,10 +6,11 @@
     - vars/default.yml
 
   tasks:
-    - name: Updating Homebrew
-      homebrew:
-        update_homebrew: yes
-        upgrade_all: yes
+    - set_fact: current_user="{{ lookup('env','USER') }}"
+    # - name: Updating Homebrew
+    #   homebrew:
+    #     update_homebrew: yes
+    #     upgrade_all: yes
         
     - name: Installing Homebrew Cask Packages
       homebrew_cask:
@@ -22,3 +23,23 @@
         name: "{{ item }}"
         state: present
       loop: "{{ brew_packages }}"
+
+    - name: Copy p10k.zsh
+      copy:
+        backup: true
+        src: files/p10k.zsh
+        dest: "/Users/{{ current_user }}/.p10k.zsh"
+
+    - name: Render antigenrc
+      template:
+        backup: true
+        src: antigenrc.j2
+        dest: "/Users/{{ current_user }}/.antigenrc"
+      tags:
+        - antigen
+
+    - name: Render zshrc
+      template:
+        backup: true
+        src: zshrc.j2
+        dest: "/Users/{{ current_user }}/.zshrc"

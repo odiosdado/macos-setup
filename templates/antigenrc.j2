@@ -1,0 +1,8 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles from the default repo (oh-my-zsh) or custom repos (zsh-users/zsh-completions)
+antigen bundle {{ oh_my_zsh_plugins | join('\nantigen bundle ') }}
+
+# Tell Antigen that you're done
+antigen apply

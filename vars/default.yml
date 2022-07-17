@@ -6,6 +6,7 @@ brew_cask_packages:
   - 1password
 brew_packages:
   - ansible
+  - antigen
   - azure-cli
   - awscli
   - git
@@ -25,3 +26,9 @@ brew_packages:
   - stern
   - tfenv
   - watch
+zsh_theme: powerlevel10k/powerlevel10k
+oh_my_zsh_plugins:
+  - git
+  - zsh-users/zsh-completions
+  - zsh-users/zsh-autosuggestions
+  - zsh-users/zsh-syntax-highlighting
