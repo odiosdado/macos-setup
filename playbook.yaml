@@ -43,3 +43,9 @@
         backup: true
         src: zshrc.j2
         dest: "/Users/{{ current_user }}/.zshrc"
+
+    - name: Render git.config
+      template:
+        backup: true
+        src: git.config.j2
+        dest: "/Users/{{ current_user }}/.git.config"

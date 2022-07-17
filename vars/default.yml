@@ -1,3 +1,4 @@
+ansible_managed: "Ansible managed: {file} modified on %Y-%m-%d %H:%M:%S by {uid} on {host}"
 brew_cask_packages:
   - docker
   - postman
@@ -32,3 +33,7 @@ oh_my_zsh_plugins:
   - zsh-users/zsh-completions
   - zsh-users/zsh-autosuggestions
   - zsh-users/zsh-syntax-highlighting
+git:
+  user:
+    name: Oscar Diosadado
+    email: oscardiosdado@gmail.com
