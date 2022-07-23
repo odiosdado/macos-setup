@@ -33,6 +33,9 @@ oh_my_zsh_plugins:
   - zsh-users/zsh-completions
   - zsh-users/zsh-autosuggestions
   - zsh-users/zsh-syntax-highlighting
+  - terraform
+  - aws
+  - docker
 git:
   user:
     name: Oscar Diosadado
