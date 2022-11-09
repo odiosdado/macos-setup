@@ -9,13 +9,7 @@ compinit
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/{{ current_user }}/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="{{ zsh_theme }}"
-
-# plugins are handled vi antigen
+# plugins & themes are handled vi antigen
 
 export ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
@@ -23,8 +17,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 source <(kubectl completion zsh)
 
-# setup antigen (plugin management for oh-my-zsh)
-source /usr/local/share/antigen/antigen.zsh
+# setup antigen (plugin & theme management for oh-my-zsh)
+source $(brew --prefix)/share/antigen/antigen.zsh
 antigen init ~/.antigenrc
 
 [ -f ~/bin/fubectl.source ] && source ~/bin/fubectl.source

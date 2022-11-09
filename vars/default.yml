@@ -23,11 +23,9 @@ brew_packages:
   - postgresql@12
   - pyenv
   - python@3.10
-  - romkatv/powerlevel10k/powerlevel10k
   - stern
   - tfenv
   - watch
-zsh_theme: powerlevel10k/powerlevel10k
 oh_my_zsh_plugins:
   - git
   - zsh-users/zsh-completions
@@ -36,6 +34,7 @@ oh_my_zsh_plugins:
   - terraform
   - aws
   - docker
+zsh_theme: romkatv/powerlevel10k
 git:
   user:
     name: Oscar Diosadado

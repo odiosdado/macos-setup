@@ -3,6 +3,8 @@
 # Load oh-my-zsh library
 antigen use oh-my-zsh
 
+antigen theme {{ zsh_theme }}
+
 # Load bundles from the default repo (oh-my-zsh) or custom repos (zsh-users/zsh-completions)
 antigen bundle {{ oh_my_zsh_plugins | join('\nantigen bundle ') }}
 

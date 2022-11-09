@@ -11,6 +11,7 @@ Managed files are backed up to `/path/to/file.<iso date>` on each run of ansible
 ```bash'
 - brew https://brew.sh/
 - ansible https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+- oh-my-zsh https://ohmyz.sh/
 ```
 
 ## How to use
