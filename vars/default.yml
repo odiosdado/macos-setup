@@ -6,7 +6,6 @@ brew_cask_packages:
   - visual-studio-code
   - 1password
 brew_packages:
-  - ansible
   - antigen
   - azure-cli
   - awscli
@@ -25,7 +24,9 @@ brew_packages:
   - python@3.10
   - stern
   - tfenv
+  - tree
   - watch
+  - fzf
 oh_my_zsh_plugins:
   - git
   - zsh-users/zsh-completions
