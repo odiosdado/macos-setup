@@ -5,6 +5,7 @@ brew_cask_packages:
   - signal
   - visual-studio-code
   - 1password
+  - powershell
 brew_packages:
   - antigen
   - azure-cli
