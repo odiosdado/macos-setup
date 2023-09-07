@@ -6,6 +6,7 @@ brew_cask_packages:
   - visual-studio-code
   - 1password
   - powershell
+  - utm
 brew_packages:
   - antigen
   - azure-cli
@@ -28,6 +29,7 @@ brew_packages:
   - tree
   - watch
   - fzf
+  - gron
 oh_my_zsh_plugins:
   - git
   - zsh-users/zsh-completions
