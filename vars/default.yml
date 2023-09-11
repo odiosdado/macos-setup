@@ -30,6 +30,7 @@ brew_packages:
   - watch
   - fzf
   - gron
+  - rustup-init
 oh_my_zsh_plugins:
   - git
   - zsh-users/zsh-completions
